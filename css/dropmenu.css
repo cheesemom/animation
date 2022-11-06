@@ -1,0 +1,44 @@
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.one {
+    float: left;
+}
+
+.one li {
+    float: left;
+}
+
+.one ul {
+    display: none;
+    position: absolute;
+    left: 90px;
+    top: 25px;
+}
+
+.one li:hover>ul {
+    display: block;
+}
+
+
+ul li a {
+    display: block;
+    text-align: center;
+    width: 90px;
+    height: 30px;
+    text-decoration: none;
+    line-height: 30px;
+}
+
+ul li {
+    width: 90px;
+    background-color: #b5b2ff;
+}
+
+ul li:hover {
+    width: 90px;
+    background-color: #ffe08c
+}

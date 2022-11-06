@@ -1,0 +1,96 @@
+.furniture {
+  padding: 100px 0;
+  justify-content: center;
+  letter-spacing: 0.6px;
+}
+
+.choice {
+  margin-top: 60px;
+}
+
+.choice>.container {
+  width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.choice .ch_wrapper {
+  font-size: 0;
+  text-align: left;
+}
+
+.choice .ch_wrapper .fur {
+  width: 55px;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.choice .ch_wrapper .fur.on {
+  width: 660px;
+}
+
+.choice .ch_wrapper .fur .ch_txt {
+  position: relative;
+  width: 800px;
+}
+
+.choice .ch_wrapper .fur .ch_txt p {
+  position: absolute;
+  left: 88px;
+  top: 30px;
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.choice .ch_wrapper .fur .ch_txt span.pp {
+  font-weight: 700;
+}
+
+.choice .ch_wrapper .fur .ch_txt a img.arrow {
+  position: absolute;
+  top: 193px;
+  left: 80px;
+  width: 49px;
+}
+
+.choice .ch_wrapper .fur .ch_txt a p {
+  position: absolute;
+  top: 150px;
+  left: 140px;
+  font-size: 12px;
+  display: inline-block;
+  line-height: 96px;
+}
+
+.choice .ch_wrapper .fur .ch_txt a .circle_ani {
+  position: absolute;
+  top: 150px;
+  left: 105px;
+}
+
+.choice .ch_wrapper .fur .ch_txt a .circle_ani svg ellipse {
+  display: none;
+  stroke-dasharray: 800;
+  stroke-dashoffset: 0;
+  animation: dash 2s linear;
+}
+
+.choice .ch_wrapper .fur .ch_txt a .circle_ani svg:hover ellipse {
+  display: inline-block;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 800;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}

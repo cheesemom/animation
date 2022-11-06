@@ -1,0 +1,78 @@
+img {
+  margin: 0 auto;
+}
+
+.slide-wrap .main-slide {
+  position: relative;
+}
+
+.slide-wrap .main-slide::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.slide-wrap .main-slide .slide-container {
+  float: left;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.slide-wrap .main-slide .slide-container img {
+  width: 900px;
+}
+
+.slide-wrap .nav {
+  position: relative;
+  width: 900px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #BFE2F2;
+}
+
+.slide-wrap .nav .ctrl button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 40;
+}
+
+.prev,
+.next {
+  border: none;
+  background: #fff;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.slide-wrap .nav .ctrl button.prev {
+  left: -40px;
+}
+
+.slide-wrap .nav .ctrl button.next {
+  right: -40px;
+}
+
+.slide-wrap .nav-wrap {
+  overflow: hidden;
+}
+
+.slide-wrap .nav-wrap::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.slide-wrap .nav-wrap .btns {
+  width: 185px;
+  float: left;
+  text-align: center;
+  padding: 20px 10px;
+  cursor: pointer;
+}
+
+.slide-wrap .nav-wrap .btns img {
+  display: block;
+  width: 100%;
+}

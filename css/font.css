@@ -1,0 +1,25 @@
+.iSTDHh {
+    position: relative;
+    overflow-x: hidden;
+    margin-top: 10rem;
+    box-sizing: border-box;
+}
+
+.duwuNz {
+    color: #00FFC6;
+    position: absolute;
+    box-sizing: border-box;
+    font-size: 8rem;
+    font-weight: 800;
+    left: 10rem;
+    width: 100%;
+}
+
+.duwuNz::after {
+    content: "Projects";
+    position: absolute;
+    color: transparent;
+    -webkit-text-stroke: 0.1rem #0028FF;
+    top: -0.4rem;
+    left: -0.4rem;
+}
